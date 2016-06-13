@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="gui_tilte_main_login">#4b4b4b</color>
+    <color name="gui_tilte_main_register">#777777</color>
+    <color name="gui_color_aaaaaa">#aaaaaa</color>
+    <color name="gui_color_main">#fb6a10</color>
+    <color name="gui_color_huang">#f8bb00</color>
+    <color name="gui_color_huang2">#ecc8af</color>
+    <color name="gui_color_huang3">#fff5ee</color>
+    <color name="gui_color_4b4b4b">#4b4b4b</color>
+</resources>
