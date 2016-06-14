@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private NetBusiness who() {
-        NetBusiness business = NetBusiness.OTHER;
+        NetBusiness business = null;
 
         TelephonyManager telManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         /** 获取SIM卡的IMSI码
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
                 business = NetBusiness.CT;
             }
         }
-        return business;
+        return null;
     }
 
 
@@ -184,8 +184,20 @@ public class MainActivity extends AppCompatActivity {
             //网络接口查询
         } else {
             //短信方式
-            sendSmsMessage(who(), isMoney);
+            if(who()!=null){
+
+                sendSmsMessage(who(), isMoney);
+            }else{
+                //查不到运营商
+
+                setNet();
+            }
         }
+    }
+    
+    
+    public void setNet(){
+        // TODO: 16-6-14 设置选择运营商,填写手机号码等,并存入本地
     }
 
 

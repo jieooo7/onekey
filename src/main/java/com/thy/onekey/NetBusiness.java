@@ -7,7 +7,7 @@ import com.netlib.model.Bean;
  * E-mail : jieooo7@163.com
  */
 public enum NetBusiness {
-    CMC("10086","",null,"",""),CT("10001","",null,"",""),CU("10010","",null,"",""),OTHER("","",null,"","");
+    CMC("10086","",null,"YE","CXGTC"),CT("10001","",null,"102","108"),CU("10010","",null,"102","CXLL"),OTHER("","",null,"","");
     private final String value;
     private final String url;
     private final Bean bean;//返回值
